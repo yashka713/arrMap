@@ -4,5 +4,8 @@
 .tbl{
     width:150px;
     height: 75px;
-    border: 1px solid grey;
+    border: 1px solid #dddddd;
+}
+.popover.fade.in.editable-container.editable-popup.top{
+    left: 0;
 }

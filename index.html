@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/bootstrap-editable/css/bootstrap-editable.css">
+    <!-- bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+    <!-- x-editable (bootstrap version) -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>arrMap</title>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -14,11 +22,19 @@
 </head>
 <body>
 <div class="table-responsive">
+    <form action="editableFRm"></form>
     <table class="tbl table table-hover">
+        <thead>
+        <tr>
+            <td>Key</td>
+            <td></td>
+            <td>Property</td>
+        </tr>
+        </thead>
         <tr class="tbl-line active">
-            <td class="tbl-field--prop">test 1</td>
+            <td class="tbl-field--prop"><a href="#" class="editable" id="propName_1">Empty</a></td>
             <td class="tbl-field--separator">:</td>
-            <td class="tbl-field--value">test 2</td>
+            <td class="tbl-field--value"><a href="#" class="editable" id="propData_1">Empty</a></td>
         </tr>
         <tr class="tbl-line active">
             <td class="tbl-field--prop">test 1</td>
@@ -27,7 +43,31 @@
         </tr>
     </table>
 </div>
-<script src="libs/jquery/jquery-1.8.2.min.js"></script>
-<script src="js/script.js"></script>
+<!--
+<div class="popover fade in editable-container editable-popup bottom" style="top: 78px; left: -25px; display: block;"><div class="arrow">
+</div>
+    <h3 class="popover-title">Enter the name of the property</h3>
+    <div class="popover-content"> <div><div class="editableform-loading" style="display: none;">
+    </div><form class="form-inline editableform" style="">
+        <div class="control-group"><div><div class="editable-input" style="position: relative;">
+            <input type="text" class="input-medium" style="padding-right: 24px;"><span class="editable-clear-x">
+ </span>
+        </div>
+            <div class="editable-buttons">
+                <button type="submit" class="btn btn-primary editable-submit">
+                    <i class="icon-ok icon-white"></i>
+                </button>
+                <button type="button" class="btn editable-cancel">
+                    <i class="icon-remove"></i>
+                </button>
+            </div>
+        </div>
+            <div class="editable-error-block help-block" style="display: none;">
+            </div>
+        </div>
+    </form>
+    </div>
+    </div>
+</div>-->
 </body>
 </html>
