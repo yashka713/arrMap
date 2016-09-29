@@ -9,3 +9,11 @@
 .popover.fade.in.editable-container.editable-popup.top{
     left: 0;
 }
+.editable-buttons {
+    margin-top: -42px;
+    margin-left: -61px;
+}
+
+.popover-content {
+    width: 200px;
+}
